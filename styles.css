@@ -81,14 +81,17 @@ nav{
 .banner_img img{
   width: 80%;
   border-radius: 50%;
+  animation: rotating_img 1.8s ease-in-out;
 }
 .banner_text .text{
   font-family: 'Poppins', sans-serif;
   width: 100%;
 }
-.banner_text .text .h4{
+.banner_text .text .intro{
   font-size: 7vh;
+  animation: name_animation 1.5s ease-in-out;
 }
+
 .banner_text .text h4{
   font-family: 'Poppins',cursive;
   font-weight: lighter;
@@ -160,13 +163,25 @@ nav{
   flex-wrap: wrap;
 }
 .achievement_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: #eee 2px solid;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   height: 250px;
   width: 250px;
   margin-top: 30px;
   border-radius: 25px;
+  padding: 0% 2%;
   text-align: center;
+}
+.achievement_item p{
+  margin-top: 10%;
+}
+.achievement_item p img{
+  height: 110px;
+  transform: translateY(-9px);
+  display: block;
 }
 
 
@@ -229,5 +244,26 @@ nav{
   }
   .achievement_item i{
     size: 20px;
+  }
+}
+
+@keyframes rotating_img{
+  0%{
+    transform: translateX(200%) rotateZ(180deg);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%) rotateZ(0deg);
+    opacity: 1;
+  }
+}
+@keyframes name_animation{
+  0%{
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
