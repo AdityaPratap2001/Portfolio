@@ -115,7 +115,7 @@ nav{
   background-color: #eee;
   font-family: 'Poppins', sans-serif;
   padding: 0% 10%;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
 }
 .underline{
   height: 5px;
@@ -170,7 +170,7 @@ nav{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   height: 250px;
   width: 250px;
-  margin-top: 30px;
+  margin: 30px 20px;
   border-radius: 25px;
   padding: 0% 2%;
   text-align: center;
@@ -183,12 +183,91 @@ nav{
   transform: translateY(-9px);
   display: block;
 }
-
-
 /* MY JOURNEY SECTION ENDS */
+
+/* MY SKILL SECTION */
+
+.skills{
+  height: auto;
+  transform: translateY(7%);
+  /* background-color: darkslategrey; */
+  background-color: rgb(31, 73, 73);
+  color: #eee;
+  font-family: 'Poppins',cursive;
+  padding: 1% 10%;
+}
+.skills h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 18px;
+  font-weight: 2200;
+}
+.skill{
+  border: solid 2px #eee;
+  padding: 2% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 35px;
+}
+.skill_text{
+  width: 60%;
+  padding: 2% 2%;
+}
+.skill_img{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills h2{
+  margin-bottom: 14px;
+}
+
+.skill_img i{
+  font-size: 8.1vw;
+}
+
+.html_img{
+  width: 33%;
+}
+.css_image{
+  width: 24%;
+}
+.js_image{
+  width: 29%;
+  margin-top: 5%;
+}
+.react_img{
+  width: 32%;
+}
+.node_img{
+  width: 32%;
+}
+.coding_img{
+  width: 28%;
+}
+.skill_img i{
+  color: #eee;
+}
+.skill_img img:hover{
+  transform: scale(1.3);
+}
+.skill_img i:hover{
+  transform: scale(1.3);
+}
+
+
+/* END OF MY SKILLS SECTION */
+
 @media (max-width:940px){
   .journey{
     transform: translateY(5.5%);
+  }
+  .skills{
+    transform: translateY(17.5%);
   }
 }
 
@@ -244,6 +323,16 @@ nav{
   }
   .achievement_item i{
     size: 20px;
+  }
+  .skill_img{
+    margin-top: 15px;
+    width: 74%;
+  }
+  .skill_text{
+    width: 100%;
+  }
+  .down{
+    order: 2;
   }
 }
 
