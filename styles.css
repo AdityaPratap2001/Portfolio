@@ -148,16 +148,19 @@ nav{
 .timeline_second,.timeline_third{
   margin-top: 35px;
 }
-.timeline span,.timeline b{
+.timeline span{
+  margin-top: 8%;
   float: right;
 }
 .timeline_left{
   width: 35%;
+  padding-right: 2%;
 }
 .timeline_right{
   border-left: black 1.5px solid;
   padding-left: 25px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  padding-right: 25px;
 }
 .achievement_container{
   display: flex;
