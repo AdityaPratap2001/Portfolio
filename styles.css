@@ -351,6 +351,8 @@ nav{
 
 .card-back a{
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .card-back{
