@@ -420,7 +420,6 @@ nav{
 }
 .content_img{
   /* display: flex; */
-  border: blue 2px solid;
 }
 .content_img img{
   width: 28vw;
